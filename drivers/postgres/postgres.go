@@ -16,7 +16,9 @@ func init() {
 		AllowMultilineComments: true,
 		LexerName:              "postgres",
 		ForceParams: func(u *dburl.URL) {
-			if u.Scheme == "cockroachdb" || u.Scheme == "cratedb" {
+			switch u.Scheme {
+			case "cockroachdb",
+				"cratedb":
 				drivers.ForceQueryParameters([]string{"sslmode", "disable"})(u)
 			}
 		},
