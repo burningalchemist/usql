@@ -167,6 +167,7 @@ Type "help" for help.
 (not connected)=> \drivers
 Available Drivers:
   cockroachdb (postgres) [cr, cdb, crdb, cockroach]
+  cratedb (postgres) [cr8, crate]
   memsql (mysql) [me]
   mssql [ms, sqlserver]
   mysql [my, maria, aurora, mariadb, percona]
@@ -202,6 +203,7 @@ supports:
 |                              |                                       |
 | Amazon Redshift (redshift)   | rs [postgres]                         |
 | CockroachDB (cockroachdb)    | cr, cockroach, crdb, cdb [postgres]   |
+| CrateDB (cratedb)            | cr8, crate [postgres]                 |
 | MemSQL (memsql)              | me [mysql]                            |
 | TiDB (tidb)                  | ti [mysql]                            |
 | Vitess (vitess)              | vt [mysql]                            |
